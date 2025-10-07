@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "code": "#1001",
+    "title": "Login page not loading",
+    "description": "User reports that the login page takes too long to load on mobile devices.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": 2,
+    "code": "#1002",
+    "title": "Payment gateway error",
+    "description": "Payment gateway shows error code 504 when users attempt checkout.",
+    "customer": "Jane Smith",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "1/16/2024"
+  },
+  {
+    "id": 3,
+    "code": "#1003",
+    "title": "Profile image not uploading",
+    "description": "Customers are unable to upload profile images due to file size limit error.",
+    "customer": "Michael Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "1/15/2024"
+  },
+  {
+    "id": 4,
+    "code": "#1004",
+    "title": "Email notification delay",
+    "description": "Emails for password reset are delayed by up to 30 minutes.",
+    "customer": "Sarah Johnson",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "1/14/2024"
+  },
+  {
+    "id": 5,
+    "code": "#1005",
+    "title": "App crashes on Android 14",
+    "description": "Several users reported crashes when opening the dashboard on Android 14 devices.",
+    "customer": "David Wilson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "1/13/2024"
+  },
+  {
+    "id": 6,
+    "code": "#1006",
+    "title": "Incorrect billing amount",
+    "description": "Customer received an invoice with incorrect total amount for September.",
+    "customer": "Emma Davis",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "1/12/2024"
+  },
+  {
+    "id": 7,
+    "code": "#1007",
+    "title": "Search function not working",
+    "description": "The search bar returns no results even when valid keywords are entered.",
+    "customer": "Robert Taylor",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "1/11/2024"
+  },
+  {
+    "id": 8,
+    "code": "#1008",
+    "title": "Dark mode color issue",
+    "description": "Text is not visible properly in dark mode on the dashboard page.",
+    "customer": "Olivia Martinez",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "1/10/2024"
+  },
+  {
+    "id": 9,
+    "code": "#1009",
+    "title": "Report generation slow",
+    "description": "Generating monthly reports takes more than 5 minutes to complete.",
+    "customer": "Liam Anderson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "1/9/2024"
+  },
+  {
+    "id": 10,
+    "code": "#1010",
+    "title": "UI overlap on small screens",
+    "description": "Navigation menu overlaps with content on devices smaller than 400px.",
+    "customer": "Sophia Thomas",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "1/8/2024"
+  },
+  {
+    "id": 11,
+    "code": "#1011",
+    "title": "Password reset link expired",
+    "description": "Reset links sent to users expire within 5 minutes instead of 24 hours.",
+    "customer": "Noah White",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "1/7/2024"
+  },
+  {
+    "id": 12,
+    "code": "#1012",
+    "title": "Unable to download invoice",
+    "description": "Download button does not respond when clicking on invoices.",
+    "customer": "Ava Harris",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "1/6/2024"
+  }
+]
