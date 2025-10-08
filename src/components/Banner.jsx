@@ -2,7 +2,7 @@ import React from 'react';
 
 import vector1 from "../assets/vector1.png"
 
-const Banner = () => {
+const Banner = ({inProgress,selectedCard }) => {
   return (
     
   <div className="mx-auto max-w-[1400px] block sm:flex justify-between gap-0 sm:gap-6 px-4 py-20">
@@ -11,7 +11,7 @@ const Banner = () => {
     <div className="w-1/2 h-full  bg-cover bg-center scale-x-[-1] "style={{ backgroundImage: `url(${vector1})` }}></div>
     <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
       <p className="w-[300px] text-[28px] text-center font-medium">In-progress</p>
-      <h1 className="text-6xl font-semibold">0</h1>
+      <h1 className="text-6xl font-semibold">{inProgress}</h1>
     </div>
   </div>
 

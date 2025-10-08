@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import CardSection from './CardSection';
 import TaskStatus from './TaskStatus';
 
-const Card = ({cardPromis}) => {
+const Card = ({cardPromis,selectedCard,setselectedCard,cards,setinProgress}) => {
   const cardData = use(cardPromis)
   console.log(cardData);
   return (
@@ -11,14 +11,14 @@ const Card = ({cardPromis}) => {
        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6  w-full sm:w-4/5'>
     {
       cardData.map(cards=>
-        <CardSection  cards={cards}></CardSection>
+        <CardSection  cards={cards} selectedCard={selectedCard} setselectedCard={setselectedCard} setinProgress={setinProgress}></CardSection>
       )
     }
     
     </div>
     <div >
-       <h1 className=" text-2xl font-semibold flex sm:hidden justify-center pr-20">Task Status</h1>
-      <TaskStatus></TaskStatus>
+       <h1 className=" text-2xl font-semibold flex sm:hidden justify-center pr-20 ">Task Status</h1>
+      <TaskStatus  selectedCard={selectedCard} setselectedCard={setselectedCard} cards={cards}></TaskStatus>
     
     </div>
     </div>
