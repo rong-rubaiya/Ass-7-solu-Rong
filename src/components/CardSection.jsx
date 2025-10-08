@@ -1,6 +1,7 @@
 import React from 'react';
 
 const CardSection = ({cards}) => {
+  
     const statusDynamic =
     cards.status.toLowerCase() === "open"
       ? "bg-[#B9F8CF] text-[#0B5E06]"
@@ -15,9 +16,10 @@ const CardSection = ({cards}) => {
     ? "text-blue-600"
     : "text-yellow-600";
 
+
   return (
    
-      <section className="p-[16px]  mt-3  bg-white shadow-sm    rounded-md mx-4 sm:mx-0 cursor-pointer">
+      <section  className="p-[16px]  mt-3  bg-white shadow-sm    rounded-md mx-4 sm:mx-0 cursor-pointer ">
     <div className="flex  items-center justify-between">
       {/* <!-- !heading --> */}
       <h1 className="text-[18px] text-black font-bold">{cards.title}</h1>

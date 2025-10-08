@@ -3,6 +3,7 @@ import Navber from "./components/Navber"
 import TicektandTask from "./components/TicektandTask"
 import Card from "./components/Card"
 import { Suspense } from "react"
+import TaskStatus from "./components/TaskStatus"
 
 const fetchCard=async()=>{
   const res=await fetch('../public/tickets.json')
@@ -29,6 +30,7 @@ function App() {
   <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
     <Card cardPromis={cardPromis}></Card>
   </Suspense>
+  
   </div>
   </div>
     </>
