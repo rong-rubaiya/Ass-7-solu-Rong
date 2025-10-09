@@ -8,10 +8,10 @@ import Footer from "./components/Footer"
  
   import { ToastContainer } from 'react-toastify';
 
-const fetchCard=async()=>{
-  const res=await fetch('../public/tickets.json')
-    return res.json()
-  
+const fetchCard = async () => {
+  const res = await fetch('/tickets.json');
+  if (!res.ok) throw new Error('Failed to fetch tickets.json');
+  return res.json();
 }
 
 const cardPromis=fetchCard();
