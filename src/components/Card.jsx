@@ -3,7 +3,7 @@ import React, { use, useState } from 'react';
 import CardSection from './CardSection';
 import TaskStatus from './TaskStatus';
 
-const Card = ({cardPromis,selectedCard,setselectedCard,cards,setinProgress}) => {
+const Card = ({cardPromis,selectedCard,setselectedCard,cards,setinProgress,setresolved}) => {
   const cardData = use(cardPromis)
   console.log(cardData);
    const [cardList, setCards] = useState(cardData || []);
@@ -20,7 +20,7 @@ const Card = ({cardPromis,selectedCard,setselectedCard,cards,setinProgress}) => 
     </div>
     <div >
        <h1 className=" text-2xl font-semibold flex sm:hidden justify-center pr-20 ">Task Status</h1>
-      <TaskStatus  selectedCard={selectedCard} setselectedCard={setselectedCard} cards={cards}></TaskStatus>
+      <TaskStatus  selectedCard={selectedCard} setselectedCard={setselectedCard} cards={cards} setresolved={setresolved} setinProgress={setinProgress}></TaskStatus>
     
     </div>
     </div>

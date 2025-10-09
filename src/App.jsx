@@ -24,6 +24,7 @@ function App() {
 console.log(selectedCard);
 
 const [inProgress,setinProgress]=useState(0);
+const [resolved,setresolved]=useState(0);
  
 
   return (
@@ -33,12 +34,12 @@ const [inProgress,setinProgress]=useState(0);
 
   <div className="max-w-[1400px] mx-auto">
 
-    <Banner inProgress={inProgress} selectedCard={selectedCard} ></Banner>
+    <Banner inProgress={inProgress} selectedCard={selectedCard} resolved={resolved}></Banner>
 
    <TicektandTask></TicektandTask>
 
   <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
-  <Card cardPromis={cardPromis} selectedCard={selectedCard} setselectedCard={setselectedCard} setinProgress={setinProgress}></Card>
+  <Card cardPromis={cardPromis} selectedCard={selectedCard} setselectedCard={setselectedCard} setinProgress={setinProgress} setresolved={setresolved}></Card>
   </Suspense>
   
   </div>
