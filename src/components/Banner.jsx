@@ -2,7 +2,7 @@ import React from 'react';
 
 import vector1 from "../assets/vector1.png"
 
-const Banner = ({inProgress,selectedCard }) => {
+const Banner = ({inProgress,}) => {
   return (
     
   <div className="mx-auto max-w-[1400px] block sm:flex justify-between gap-0 sm:gap-6 px-4 py-20">

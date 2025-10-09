@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from "react-toastify";
 
-const CardSection = ({ cards,  setselectedCard,setinProgress }) => {
+const CardSection = ({ cards,  setselectedCard,setinProgress,setCards }) => {
   const statusDynamic =
     cards.status.toLowerCase() === "open"
       ? "bg-[#B9F8CF] text-[#0B5E06]"
@@ -19,16 +19,19 @@ const CardSection = ({ cards,  setselectedCard,setinProgress }) => {
   return (
     <section
       onClick={() => {
+       setCards(prev => prev.filter(c => String(c.id) !== String(cards.id)));
+
         setselectedCard((prev) => [...prev, cards]);
+
         setinProgress((prev) => prev + 1);
 
        toast("✅In-progress!")
 
         
       }}
-      className="p-[16px] mt-3 bg-white shadow-sm rounded-md mx-4 sm:mx-0 cursor-pointer"
+      className="p-[16px] mt-3 bg-white shadow-sm rounded-md mx-4 sm:mx-0 cursor-pointer w-full  "
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <h1 className="text-[18px] text-black font-bold">{cards.title}</h1>
         <div className={`px-3 py-1 rounded-3xl ${statusDynamic}`}>
           <i className="fa-solid fa-circle"></i>

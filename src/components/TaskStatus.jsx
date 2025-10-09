@@ -24,9 +24,9 @@ const TaskStatus = ({ selectedCard }) => {
       <div className='bg-white p-3 rounded-md mt-3 '>
        <div className='bg-green-100 py-3 px-4 sm:px-1 rounded-md text-center sm:text-0'>
          <h1 className='text-xl font-semibold'>Heading</h1>
-        <div className='block sm:flex justify-between py-3'>
+        <div className='block sm:flex justify-between py-3 gap-4'>
           <p className='text-green-400'>✔️Completed</p>
-          <p>Click to Remove</p>
+          <p className=' text-gray-500 cursor-pointer text-sm'>Click to Remove</p>
         </div>
        </div>
       </div>

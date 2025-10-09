@@ -1,17 +1,19 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
+
 import CardSection from './CardSection';
 import TaskStatus from './TaskStatus';
 
 const Card = ({cardPromis,selectedCard,setselectedCard,cards,setinProgress}) => {
   const cardData = use(cardPromis)
   console.log(cardData);
+   const [cardList, setCards] = useState(cardData || []);
   return (
    <>
     <div className='flex flex-col sm:flex-row gap-5'>
        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6  w-full sm:w-4/5'>
     {
-      cardData.map(cards=>
-        <CardSection  cards={cards} selectedCard={selectedCard} setselectedCard={setselectedCard} setinProgress={setinProgress}></CardSection>
+     cardList.map(cards=>
+        <CardSection  cards={cards} selectedCard={selectedCard} setselectedCard={setselectedCard} setinProgress={setinProgress} cardList={cardList} setCards={setCards}></CardSection>
       )
     }
     
