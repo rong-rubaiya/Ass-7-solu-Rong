@@ -4,6 +4,7 @@ import TicektandTask from "./components/TicektandTask"
 import Card from "./components/Card"
 import { Suspense, useState } from "react"
 import TaskStatus from "./components/TaskStatus"
+import Footer from "./components/Footer"
  
   import { ToastContainer } from 'react-toastify';
 
@@ -43,6 +44,7 @@ const [resolved,setresolved]=useState(0);
   </Suspense>
   
   </div>
+  <Footer></Footer>
   </div>
 <ToastContainer/>
   

@@ -29,7 +29,7 @@ const TaskStatus = ({ selectedCard = [], setselectedCard, setresolved, setinProg
   return (
     <>
       {/* In-Progress Tasks */}
-      <div className="p-2 sm:p-3 w-4/5 sm:w-auto mx-auto sm:mx-0 rounded-md bg-white">
+      <div className="p-2 sm:p-3 w-4/5 sm:w-auto mx-auto sm:mx-0 rounded-md bg-white h-auto mt-3">
         {selectedCard.length > 0 ? (
           selectedCard.map(card => (
             <div key={card.id} className="mb-3 mt-3 p-4 shadow-xl rounded-sm bg-[#F5F5F5]">

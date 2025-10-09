@@ -29,7 +29,7 @@ const CardSection = ({ cards,  setselectedCard,setinProgress,setCards }) => {
 
         
       }}
-      className="p-[16px] mt-3 bg-white shadow-sm rounded-md mx-4 sm:mx-0 cursor-pointer w-full  "
+      className="p-[16px] mt-3 bg-white shadow-sm rounded-md mx-4 sm:mx-0 cursor-pointer   "
     >
       <div className="flex items-center justify-between ">
         <h1 className="text-[18px] text-black font-bold">{cards.title}</h1>
